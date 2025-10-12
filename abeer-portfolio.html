@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abeer Shahzad | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #f8f9fa, #eef2f3);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+      background: linear-gradient(135deg, #0072ff, #00c6ff);
+      color: white;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top center;
+      border: 4px solid white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-top: 1rem;
+    }
+
+    h2 {
+      color: #0072ff;
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 1.8rem;
+    }
+
+    p {
+      max-width: 750px;
+      margin: 1rem auto;
+      text-align: center;
+      line-height: 1.8;
+      font-size: 1.05rem;
+      color: #444;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem 1rem;
+    }
+
+    .skill {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      padding: 1rem 2rem;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .skill:hover {
+      background: linear-gradient(135deg, #0072ff, #00c6ff);
+      color: white;
+      transform: translateY(-5px);
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .project-card {
+      background: white;
+      width: 320px;
+      border-radius: 18px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: all 0.4s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: 0.3s;
+    }
+
+    .project-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .project-card .content {
+      padding: 1.2rem;
+    }
+
+    .project-card h3 {
+      color: #0072ff;
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card p {
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.8rem;
+      background: linear-gradient(135deg, #0072ff, #00c6ff);
+      color: white;
+      border-radius: 30px;
+      font-weight: 500;
+      text-decoration: none;
+      margin: 2rem auto;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #0055d4, #0093e9);
+      transform: translateY(-3px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: white;
+      margin: 3rem auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 800px;
+    }
+    .contact h3 {
+      color: #0072ff;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+    .contact a {
+      color: #0072ff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/abeer-profile.png" alt="Abeer Shahzad" class="profile-img" />
+    <h1>Abeer Shahzad</h1>
+    <p>Flutter Developer | UI Designer | Quick Learner</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m an enthusiastic and creative developer passionate about building clean, functional, and visually appealing mobile apps. Currently in my first semester of university after completing my FSC, I’m already working on practical projects that help me grow every day. 
+      My curiosity drives me to constantly learn new technologies and experiment with ideas that bring real value. I believe that persistence, teamwork, and a strong problem-solving mindset are key to achieving excellence in tech.
+    </p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>
+      <b>Intern - Software Development (3 Months)</b><br>
+      Worked on mobile app prototypes using Flutter and Firebase. Gained hands-on experience in UI development, backend integration, and debugging.
+      Collaborated with mentors to refine user interface designs and improve overall performance.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">Flutter</div>
+      <div class="skill">Dart</div>
+      <div class="skill">Firebase</div>
+      <div class="skill">Supabase</div>
+      <div class="skill">ZegoCloud</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">UI/UX Design</div>
+      <div class="skill">Problem Solving</div>
+      <div class="skill">Communication</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+
+      <a href="https://drive.google.com/drive/folders/1oUgrbU_tr4RlP--DcfDbEiq1xi9dgXMb" target="_blank" class="project-card">
+        <img src="images/chat1.jpeg" alt="Chat App Project">
+        <div class="content">
+          <h3>Professional Chat App</h3>
+          <p>A real-time chat application built with Flutter and Firebase featuring authentication, group messaging, and sleek animations for a professional user experience.</p>
+        </div>
+      </a>
+
+      <a href="https://drive.google.com/drive/folders/1Rnf9TUDA7hAyWrfRRs2yRiyjYKvC_x3P" target="_blank" class="project-card">
+        <img src="images/quran1.jpg" alt="Quran App Project">
+        <div class="content">
+          <h3>Quran App</h3>
+          <p>An elegant and feature-rich Quran app designed for readability and user comfort. Includes offline access, bookmarking, and intuitive navigation.</p>
+        </div>
+      </a>
+
+      
+
+    </div>
+  </section>
+
+  <section class="contact">
+    <h3>Let's Connect</h3>
+    <p>If you'd like to collaborate, discuss a project, or just say hi — feel free to reach out!</p>
+    <p>Email: <a href="mailto:abeer.shahzad54@gmail.com">abeer.shahzad54@gmail.com</a></p>
+    <p>Phone Number: <a href="#">+92 337 5462439</a></p>
+  </section>
+
+  <div style="text-align:center;">
+    <a href="cv.pdf" class="btn" download>Download CV</a>
+  </div>
+
+  <footer>
+    © 2025 Abeer Shahzad. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
